@@ -4,36 +4,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Column Layout Methods</title>
+  <title>Flex Direction</title>
   <style>
-    p {
-      font-weight: 700;
-      margin: 0;
-    }
-
-    li {
-      list-style: none;
-    }
-
     .container {
-      padding: 10px;
-      background-color: gold;
-      display: flex;
-      gap: 10px;
+      color: white;
+      border: 5px solid gold;
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    .container > * {
+      flex-basis: 100px;
+    }
+
+    .red {
+      background-color: #eb4d4b;
+    }
+
+    .orange {
+      background-color: #f0932b;
+    }
+
+    .yellow {
+      background-color: #f6e58d;
+    }
+
+    .green {
+      background-color: #6ab04c;
+    }
+
+    .blue {
+      background-color: #4834d4;
+    }
+
+    .indigo {
+      background-color: #30336b;
+    }
+
+    .purple {
+      background-color: #be2edd;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <p>Page Layout Methods</p>
-
-    <li><a href="./html-table.html">HTML Table</a></li>
-    <li><a href="./inline-block.html">Inline-Block</li>
-    <li><a href="./absolute-position.html">Absolute Positioning</li>
-    <li><a href="./float.html">Float</li>
-    <li><a href="./flex.html">Flexbox</li>
-
+    <div class="red">Red</div>
+    <div class="orange">Orange</div>
+    <div class="yellow">Yellow</div>
+    <div class="green">Green</div>
+    <div class="blue">Blue</div>
+    <div class="indigo">Indigo</div>
+    <div class="purple">Purple</div>
   </div>
 </body>
 
