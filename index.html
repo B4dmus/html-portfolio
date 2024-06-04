@@ -1,37 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>CSS Positioning Exercise</title>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
   <style>
-    .blue-box {
-      background-color: blue;
-      height: 300px;
-      width: 500px;
-      position: absolute;
-      left: 200px;
-      top: 200px;
+    
+    .flag {
+      background-color: #ce1126;
+      width: 900px;
+      height: 600px;
+      position: relative;
     }
-    .red-circle {
-      background-color: red;
+    .flag > div {
+      background-color: #002868;
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      top: 150px;
+    }
+    .flag > div > div {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      position: relative;
-      left: 250px;
-      top: 150px;
-      }
+      position: absolute;
+      background-color: #fff;
+      top: 50px;
+      left: 350px;
+    }
+    p {
+      text-align: center;
+      font-size: 5rem;
+      padding: 0;
+      margin: 0;
+      color: #fff;
+    }
+    .flag > div > div > p {
+      color: black;
+    }
+    
 
-  
   </style>
 </head>
 
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
 <body>
-  <div class="blue-box">
-    <div class="red-circle">
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
     </div>
   </div>
-
 </body>
 
 </html>
