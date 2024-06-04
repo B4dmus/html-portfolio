@@ -1,24 +1,15 @@
-/* Don't change the existing CSS. */
-
-.box {
-  background-color: blue;
-  padding: 10px;
+/* Write your code here: */
+h1,h2 {
+    color: blueviolet;
 }
 
-p {
-  color: yellow;
-  margin: 0;
-  padding: 0;
+.box> .done {
+    color: firebrick;
 }
 
-.white-text {
-  color: white;
-  margin: 0;
-  padding 0;
+li.done {
+    color: seagreen;
 }
-.inner-box{
-  background-color: red;
-}
-#outer-box {
-  border: 10px solid purple;
+ul p.done {
+    font-size: 0.5rem;
 }
