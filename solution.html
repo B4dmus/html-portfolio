@@ -1,62 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flex Direction</title>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    .container {
-      color: white;
-      border: 5px solid gold;
-      display: inline-flex;
-      flex-direction: column;
+    body {
+      font-family: 'Sono', sans-serif;
     }
 
-    .container > * {
-      flex-basis: 100px;
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
     }
 
-    .red {
-      background-color: #eb4d4b;
+    .pricing-plan {
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      text-align: center;
     }
 
-    .orange {
-      background-color: #f0932b;
+    .plan-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    .yellow {
-      background-color: #f6e58d;
+    .plan-price {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    .green {
-      background-color: #6ab04c;
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
-    .blue {
-      background-color: #4834d4;
+    .plan-features li {
+      margin-bottom: 20px;
     }
 
-    .indigo {
-      background-color: #30336b;
+    .plan-button {
+      padding: 10px;
+      background-color: #ff6600;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
     }
 
-    .purple {
-      background-color: #be2edd;
+    @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="red">Red</div>
-    <div class="orange">Orange</div>
-    <div class="yellow">Yellow</div>
-    <div class="green">Green</div>
-    <div class="blue">Blue</div>
-    <div class="indigo">Indigo</div>
-    <div class="purple">Purple</div>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$11.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
   </div>
+
 </body>
 
 </html>
